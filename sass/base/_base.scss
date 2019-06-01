@@ -1,0 +1,30 @@
+:root {
+    --color-primary : red;
+    --color-secondary: blue;
+}
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr repeat(4, 20vw) 1fr;
+    grid-template-rows: 6rem max-content;
+    grid-auto-rows: max-content;
+}
