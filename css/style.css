@@ -86,3 +86,8 @@ body {
       text-transform: uppercase;
       font-size: 1.1rem;
       color: white; }
+
+.projects {
+  grid-column: 2 / 6;
+  height: 60vh;
+  background: red; }
