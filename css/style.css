@@ -26,6 +26,34 @@ body {
   grid-template-rows: 6rem max-content;
   grid-auto-rows: max-content; }
 
+.nav {
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 2;
+  color: white; }
+  .nav__logo {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    font-size: 1.5rem;
+    text-transform: uppercase; }
+    .nav__logo__item:first-child {
+      margin-right: 1rem; }
+  .nav__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 35%;
+    list-style: none; }
+    .nav__list__link {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      color: white; }
+
 .intro {
   grid-row: 2 / 3;
   grid-column: 1 / -1;
@@ -59,35 +87,34 @@ body {
       font-size: 1.3rem;
       color: grey; }
 
-.nav {
-  grid-row: 1 / 2;
-  grid-column: 1 / -1;
+.projects {
+  grid-column: 1/ -1;
+  height: 60vh;
+  background: red;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  z-index: 2;
-  color: white; }
-  .nav__logo {
-    display: flex;
-    justify-content: center;
-    width: 40%;
-    font-size: 1.5rem;
-    text-transform: uppercase; }
-    .nav__logo__item:first-child {
-      margin-right: 1rem; }
-  .nav__list {
+  justify-content: center;
+  flex-direction: column; }
+  .projects__container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 35%;
-    list-style: none; }
-    .nav__list__link {
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: 1.1rem;
-      color: white; }
-
-.projects {
-  grid-column: 2 / 6;
-  height: 60vh;
-  background: red; }
+    justify-content: flex-end;
+    position: relative;
+    height: 68%;
+    width: 47%;
+    background: blue; }
+    .projects__container p {
+      width: 50%; }
+  .projects__img {
+    position: absolute;
+    bottom: 0;
+    object-fit: cover; }
+    .projects__img--pc {
+      height: 65%;
+      left: -10%; }
+    .projects__img--phone {
+      height: 47%;
+      left: 30%;
+      bottom: .5rem;
+      background: salmon;
+      overflow: hidden; }

@@ -3,6 +3,7 @@
 @import "base/base";
 @import "base/typography";
 
-@import "components/intro";
 @import "components/navigation";
-@import "components/projects";
+
+@import "layout/intro";
+@import "layout/projects";

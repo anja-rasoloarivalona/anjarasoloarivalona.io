@@ -1,0 +1,50 @@
+.projects {
+    grid-column: 1/ -1;
+    height: 60vh;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        height: 68%;
+        width: 47%;     
+        background: blue;
+     
+
+        & p {
+            width: 50%;
+        }
+    }
+
+
+    &__img {
+        position: absolute;
+        bottom: 0;    
+        object-fit: cover;
+
+        &--pc {
+            height: 65%;
+            left: -10%;  
+        }
+
+        &--phone {
+            height: 47%;
+            left: 30%; 
+            bottom: .5rem; 
+            background: salmon;
+            overflow: hidden;
+        }
+    }
+
+
+
+
+
+}
+
