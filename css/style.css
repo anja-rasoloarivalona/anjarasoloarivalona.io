@@ -26,6 +26,18 @@ body {
   grid-template-rows: 6rem max-content;
   grid-auto-rows: max-content; }
 
+body {
+  /*using the power of inheritance*/
+  font-family: sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1,7; }
+
+.title--primary {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white; }
+
 .nav {
   grid-row: 1 / 2;
   grid-column: 1 / -1;
@@ -62,8 +74,10 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 2; }
+  .intro--1 {
+    display: none; }
   .intro__layout {
-    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.801)), url(../img/bg.jpg);
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.801)), url(../img/analysis.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

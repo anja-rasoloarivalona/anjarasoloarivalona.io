@@ -7,6 +7,10 @@
     justify-content: center;
     z-index: 2;
 
+    &--1 {
+        display: none;
+    }
+
 
     
     
@@ -15,7 +19,7 @@
             to right bottom,
             rgba(black, 0.801),
             rgba(black, 0.801)),
-            url(../img/bg.jpg);
+            url(../img/analysis.jpg);
         background-size: cover; 
         background-position: center;
         background-repeat: no-repeat;
