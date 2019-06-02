@@ -1,50 +1,117 @@
 .projects {
     grid-column: 1/ -1;
-    height: 60vh;
-    background: red;
+    height: calc(100vh - 6rem);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background: green;
+}
 
-    &__container {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        position: relative;
-        height: 68%;
-        width: 47%;     
-        background: blue;
-     
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    min-height: 30rem;
+    min-width: 61rem;
+    background: white;
+    
 
-        & p {
-            width: 50%;
-        }
+    & p {
+        width: 50%;
     }
 
 
-    &__img {
+    &__gallery {
+        width: 50%;
+        height: 100%;
         position: absolute;
-        bottom: 0;    
-        object-fit: cover;
+        bottom: 0;
+        left: 0;
+       
 
-        &--pc {
-            height: 65%;
-            left: -10%;  
+        &__img {
+            position: absolute;
+            bottom: 0;    
+            object-fit: cover
+        }  
+
+        &__pc {
+            object-fit: cover;
+            position: absolute;
+            bottom: 0;    
+            width: 32rem;
+            left: -22%; 
         }
 
-        &--phone {
-            height: 47%;
-            left: 30%; 
-            bottom: .5rem; 
-            background: salmon;
-            overflow: hidden;
+        &__phone {
+            position: absolute;
+            bottom: 0;
+            object-fit: cover;
+            width: 9rem;
+            height: 16rem;
+            left: 55%;
         }
     }
 
 
 
+    &--1__img {
+        width: 24.5rem;
+        height: 17rem;
+        left: -3rem;
+        bottom: 2.2rem;
 
+
+        &--small {
+            width: 7.45rem;
+            height: 13rem;
+            left: 17.9rem;
+            bottom: 1.45rem;
+        }
+    }
+
+
+
+    &--2__img {
+        width: 24.5rem;
+        height: 17rem;
+        left: -3rem;
+        bottom: 2.2rem;
+
+
+        &--small {
+            width: 7.3rem;
+            height: 13rem;
+            left: 18.1rem;
+            bottom: 1.7rem;
+        }
+    }
+
+    &--3__img {
+        width: 24.5rem;
+        height: 17rem;
+        left: -3rem;
+        bottom: 1.59rem;
+
+
+        &--small {
+            width: 7.3rem;
+            height: 13rem;
+            left: 18.1rem;
+            bottom: 1.7rem;
+        }
+    }
+
+
+    
 
 }
+
+  
+
+    
+   
+
 

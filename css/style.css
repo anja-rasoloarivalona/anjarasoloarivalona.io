@@ -45,7 +45,12 @@ body {
   align-items: center;
   justify-content: space-around;
   z-index: 4;
-  color: white; }
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6rem; }
   .nav__logo {
     display: flex;
     justify-content: center;
@@ -65,6 +70,11 @@ body {
       text-transform: uppercase;
       font-size: 1.1rem;
       color: white; }
+
+.contact {
+  height: calc(100vh - 6rem);
+  grid-column: 2 / 6;
+  background: red; }
 
 .intro {
   grid-row: 1 / 3;
@@ -102,32 +112,78 @@ body {
 
 .projects {
   grid-column: 1/ -1;
-  height: 60vh;
-  background: red;
+  height: calc(100vh - 6rem);
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column; }
-  .projects__container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: relative;
-    height: 68%;
-    width: 47%;
-    background: blue; }
-    .projects__container p {
-      width: 50%; }
-  .projects__img {
+  flex-direction: column;
+  background: green; }
+
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  min-height: 30rem;
+  min-width: 61rem;
+  background: white; }
+  .project p {
+    width: 50%; }
+  .project__gallery {
+    width: 50%;
+    height: 100%;
     position: absolute;
     bottom: 0;
-    object-fit: cover; }
-    .projects__img--pc {
-      height: 65%;
-      left: -10%; }
-    .projects__img--phone {
-      height: 47%;
-      left: 30%;
-      bottom: .5rem;
-      background: salmon;
-      overflow: hidden; }
+    left: 0; }
+    .project__gallery__img {
+      position: absolute;
+      bottom: 0;
+      object-fit: cover; }
+    .project__gallery__pc {
+      object-fit: cover;
+      position: absolute;
+      bottom: 0;
+      width: 32rem;
+      left: -22%; }
+    .project__gallery__phone {
+      position: absolute;
+      bottom: 0;
+      object-fit: cover;
+      width: 9rem;
+      height: 16rem;
+      left: 55%; }
+  .project--1__img {
+    width: 24.5rem;
+    height: 17rem;
+    left: -3rem;
+    bottom: 2.2rem; }
+    .project--1__img--small {
+      width: 7.45rem;
+      height: 13rem;
+      left: 17.9rem;
+      bottom: 1.45rem; }
+  .project--2__img {
+    width: 24.5rem;
+    height: 17rem;
+    left: -3rem;
+    bottom: 2.2rem; }
+    .project--2__img--small {
+      width: 7.3rem;
+      height: 13rem;
+      left: 18.1rem;
+      bottom: 1.7rem; }
+  .project--3__img {
+    width: 24.5rem;
+    height: 17rem;
+    left: -3rem;
+    bottom: 1.59rem; }
+    .project--3__img--small {
+      width: 7.3rem;
+      height: 13rem;
+      left: 18.1rem;
+      bottom: 1.7rem; }
+
+.skills {
+  height: calc(100vh - 6rem);
+  grid-column: 2 / 6;
+  background: salmon; }
