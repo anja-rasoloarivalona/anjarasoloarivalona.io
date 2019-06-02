@@ -1,5 +1,73 @@
 .skills {
         height: calc(100vh - 6rem);
         grid-column: 2 / 6;
-        background: salmon;
+
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        &__front {
+            width: 80%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    
+
+            &__title {
+                font-size: 1.4rem;
+                padding: .8rem 1.6rem;
+            }
+
+            &__list {
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+
+
+                &__item {
+                    display: grid;
+                    grid-template-columns: max-content 1fr;                    
+                    width: 40%;
+                    margin: 1rem 0;
+                    
+                    & h3 {
+                        height: 100%;
+                        width: 100%;
+                        padding-left: 2rem;
+                        display: flex;
+                        align-items: center;
+                        
+
+                    }
+                }
+            }
+        }
+
+
+        &__icon {
+            width: 3rem;
+            height: 3rem;
+            object-fit: cover;
+
+            &--html {
+                fill: #E34F26;
+            }
+
+            &--css {
+                fill: #1A70B5;
+            }
+        }
+
+
+        &__business {
+            width: 80%;
+            height: 80%;
+        }
     }
