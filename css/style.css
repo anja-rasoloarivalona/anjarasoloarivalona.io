@@ -250,7 +250,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-family: var(--font-primary); }
+  font-family: var(--font-primary);
+  position: relative; }
   .projects--1 {
     background: #C69963; }
   .projects--2 {
@@ -268,6 +269,15 @@ body {
   background: white;
   flex-direction: column;
   margin-top: 3rem; }
+  .project__number {
+    position: absolute;
+    top: -10rem;
+    left: -15rem;
+    font-size: 25rem;
+    font-weight: 700;
+    color: rgba(218, 205, 205, 0.767);
+    display: flex;
+    align-items: center; }
   .project__text {
     max-width: 55%;
     height: 100%;
