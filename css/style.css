@@ -193,19 +193,31 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  background: blue; }
+  flex-direction: column; }
+  .projects--1 {
+    background: #C69963; }
+  .projects--2 {
+    background: #80003f; }
+  .projects--3 {
+    background: #1b0080; }
 
 .project {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  align-items: flex-end;
   position: relative;
   min-height: 30rem;
   min-width: 61rem;
-  background: white; }
-  .project p {
-    width: 50%; }
+  max-width: 61rem;
+  background: white;
+  flex-direction: column; }
+  .project div:last-child {
+    max-width: 55%;
+    background: red;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    padding: .5rem 1rem; }
   .project__gallery {
     width: 50%;
     height: 100%;
@@ -302,7 +314,7 @@ body {
   align-items: center;
   justify-content: center;
   grid-row: 6 / 7;
-  grid-column: 2 / 6;
+  grid-column: 3 / 6;
   position: relative; }
   .skills__front__list {
     width: 60%;
@@ -326,7 +338,7 @@ body {
 
 .skills__degree {
   position: absolute;
-  top: 11rem;
+  top: 12rem;
   left: 0;
   display: flex;
   align-items: center; }
@@ -376,12 +388,13 @@ body {
           height: 4rem;
           object-fit: cover; }
           .skills__business__item__list__item__img--sql {
-            height: 7rem;
+            height: 7.2rem;
+            width: 14rem;
             object-fit: cover;
             transform: translateY(-40%); }
           .skills__business__item__list__item__img--sap {
             width: 16rem;
-            height: 6rem;
+            height: 6.2rem;
             object-fit: cover; }
           .skills__business__item__list__item__img--access {
             height: 5rem;

@@ -53,7 +53,7 @@
             align-items: center;
             justify-content: center;
             grid-row: 6 / 7;
-            grid-column: 2 / 6;
+            grid-column: 3 / 6;
             position: relative;    
     
 
@@ -162,14 +162,15 @@
                             object-fit: cover;
 
                             &--sql {
-                                height: 7rem;
+                                height: 7.2rem;
+                                width: 14rem;
                                 object-fit: cover;
                                 transform: translateY(-40%)
                             }
 
                             &--sap {
                                 width: 16rem;
-                                height: 6rem;
+                                height: 6.2rem;
                                 object-fit: cover;
                             }
 
