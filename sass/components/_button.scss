@@ -4,19 +4,62 @@
     font-size: 1.1rem;
     width: 12rem;
     height: 4rem;
-    border: 1px solid grey;
     transition: all .3s ease-in-out;
+    background: white;
     
  
         & a {
             text-decoration: none;
-            color: grey;
+        
         }
 
-        &:hover {
-            background: black;
-            border: none;
-            color: white;
-            transform: translateY(-3px);
+        &--1 {
+            border: 1px solid #C69963;
+
+            & a {
+                color: #C69963;
+            }
         }
+
+
+        &--2  {
+            border: 1px solid #80003f;
+          
+
+            & a {
+                color: #80003f;
+            }
+        }
+
+        &--3  {
+            border: 1px solid #1b0080;
+            & a {
+                color: #1b0080;
+            }
+        }
+
+
+        &:hover {
+            border: none;
+            transform: translateY(-3px);
+
+            & a {
+                color: white;
+            }
+        }
+
+
+        &--1:hover {
+            background: #C69963
+        }
+
+        &--2:hover {
+            background: #80003f
+        }
+
+        &--3:hover {
+            background: #1b0080
+        }
+
+        
 }

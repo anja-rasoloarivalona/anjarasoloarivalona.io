@@ -48,16 +48,33 @@ body {
   font-size: 1.1rem;
   width: 12rem;
   height: 4rem;
-  border: 1px solid grey;
-  transition: all .3s ease-in-out; }
+  transition: all .3s ease-in-out;
+  background: white; }
   .button a {
-    text-decoration: none;
-    color: grey; }
+    text-decoration: none; }
+  .button--1 {
+    border: 1px solid #C69963; }
+    .button--1 a {
+      color: #C69963; }
+  .button--2 {
+    border: 1px solid #80003f; }
+    .button--2 a {
+      color: #80003f; }
+  .button--3 {
+    border: 1px solid #1b0080; }
+    .button--3 a {
+      color: #1b0080; }
   .button:hover {
-    background: black;
     border: none;
-    color: white;
     transform: translateY(-3px); }
+    .button:hover a {
+      color: white; }
+  .button--1:hover {
+    background: #C69963; }
+  .button--2:hover {
+    background: #80003f; }
+  .button--3:hover {
+    background: #1b0080; }
 
 .footer {
   grid-column: 1 / -1;
