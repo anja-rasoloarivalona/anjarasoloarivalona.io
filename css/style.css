@@ -4,7 +4,8 @@
 
 :root {
   --color-primary: red;
-  --color-secondary: blue; }
+  --color-secondary: blue;
+  --font-primary: 'Open Sans', sans-serif; }
 
 *,
 *::before,
@@ -18,8 +19,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: sans-serif;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-family: var(--font-primary); }
 
 .container {
   display: grid;
@@ -37,7 +38,9 @@ body {
 .title--primary {
   font-size: 3.5rem;
   text-transform: uppercase;
-  color: white; }
+  color: white;
+  font-family: var(--font-primary);
+  letter-spacing: 2.5px; }
 
 .button {
   padding: .7rem 1.4rem;
@@ -97,7 +100,8 @@ body {
     justify-content: center;
     width: 40%;
     font-size: 1.5rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: var(--font-primary); }
     .nav__logo__item:first-child {
       margin-right: 1rem; }
   .nav__list {
@@ -110,7 +114,8 @@ body {
       text-decoration: none;
       text-transform: uppercase;
       font-size: 1.1rem;
-      color: white; }
+      color: white;
+      font-family: var(--font-primary); }
 
 .contact {
   height: calc(100vh - 8rem);
@@ -195,7 +200,8 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative; }
+  position: relative;
+  font-family: var(--font-primary); }
   .intro__social {
     position: absolute;
     bottom: 0;
@@ -227,6 +233,7 @@ body {
     flex-direction: column; }
     .intro__text__title {
       font-size: 3rem;
+      letter-spacing: 2px;
       margin-bottom: 1rem;
       color: white; }
     .intro__text__para {
@@ -242,7 +249,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column; }
+  flex-direction: column;
+  font-family: var(--font-primary); }
   .projects--1 {
     background: #C69963; }
   .projects--2 {
@@ -380,7 +388,7 @@ body {
     grid-template-rows: repeat(5, max-content);
     align-items: center;
     justify-items: center;
-    transform: translateX(17%);
+    transform: translateX(14%);
     margin-top: 3rem; }
     .skills__front__list__item {
       display: grid;

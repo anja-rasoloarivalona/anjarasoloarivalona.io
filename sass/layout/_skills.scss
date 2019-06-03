@@ -68,7 +68,7 @@
                 grid-template-rows: repeat(5, max-content);     
                 align-items: center;
                 justify-items: center;
-                transform: translateX(17%);
+                transform: translateX(14%);
                 margin-top: 3rem;
            
 
@@ -159,6 +159,8 @@
                     width: 80%;
                     list-style: none;
                     padding-left: 13rem;
+                   
+                    
 
                     &--tools {
                         display: grid;

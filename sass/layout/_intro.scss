@@ -10,6 +10,7 @@
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    font-family: var(--font-primary);
 
     &__social {
         position: absolute;
@@ -68,6 +69,7 @@
 
         &__title {
             font-size: 3rem;
+            letter-spacing: 2px;
             margin-bottom: 1rem;
             color: white
         }

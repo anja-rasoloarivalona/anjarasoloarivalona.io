@@ -1,6 +1,8 @@
 :root {
     --color-primary : red;
     --color-secondary: blue;
+
+    --font-primary : 'Open Sans', sans-serif;
 }
 
 
@@ -15,11 +17,12 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    
 }
 
 body {
-    font-family: sans-serif;
     overflow-x: hidden;
+    font-family: var(--font-primary);
 }
 
 

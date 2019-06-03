@@ -9,4 +9,6 @@ body { /*using the power of inheritance*/
     font-size: 3.5rem;
     text-transform: uppercase;
     color: white;
+    font-family: var(--font-primary);
+    letter-spacing: 2.5px;
 }
