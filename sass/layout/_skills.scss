@@ -37,24 +37,28 @@
             }
         }
 
+
+
+
+
         &__title {
-            position: absolute;
-            font-size: 5rem;
-            top: 5rem;
-            left: 0;
+            font-size: 3.8rem;
             text-transform: uppercase;
             color: rgb(218, 218, 218);
         }
 
         &__front {
+            padding-top: 2rem;
             width: 100%;
             height: 56vh;
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
             grid-row: 6 / 7;
-            grid-column: 3 / 6;
-            position: relative;    
+            grid-column: 2 / 6;
+            position: relative; 
+  
     
 
         &__list {
@@ -64,7 +68,8 @@
                 grid-template-rows: repeat(5, max-content);     
                 align-items: center;
                 justify-items: center;
-                transform: translateX(17%) translateY(25%);
+                transform: translateX(17%);
+                margin-top: 3rem;
            
 
 
@@ -91,11 +96,10 @@
         }
 
         &__degree {
-            position: absolute;
-            top: 12rem;
-            left: 0;
             display: flex;
             align-items: center;
+            margin: 2rem 0;
+
 
             &__img {
                 width: 4rem;
@@ -117,15 +121,28 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
             grid-row: 7/ 8;
-            grid-column: 2 / 6;
-          
-            position: relative;
+            grid-column: 2 / 6;     
+ 
+
+            &__title {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            &__section {
+                display: flex;
+                width: 80%;
+                margin-top: 3rem;
+            }
             
        
             &__item {
                 width: 80%;
-                height: 50%;
+                height: 100%;
                 display: grid;
                 grid-template-rows: max-content 1fr;
                 
@@ -133,7 +150,7 @@
                     width: 100%;
                     padding: 2rem 0;
                     padding-left: 13rem;
-                    transform: translateY(4rem);
+              
                 }
 
                 &__list {
@@ -152,7 +169,7 @@
                     &__item {
                         padding: 1rem 0;
                         font-size: 1.4rem;
-                        transform: translateY(4rem);
+
                 
 
 

@@ -344,21 +344,20 @@ body {
     justify-content: center; }
 
 .skills__title {
-  position: absolute;
-  font-size: 5rem;
-  top: 5rem;
-  left: 0;
+  font-size: 3.8rem;
   text-transform: uppercase;
   color: #dadada; }
 
 .skills__front {
+  padding-top: 2rem;
   width: 100%;
   height: 56vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   grid-row: 6 / 7;
-  grid-column: 3 / 6;
+  grid-column: 2 / 6;
   position: relative; }
   .skills__front__list {
     width: 60%;
@@ -367,7 +366,8 @@ body {
     grid-template-rows: repeat(5, max-content);
     align-items: center;
     justify-items: center;
-    transform: translateX(17%) translateY(25%); }
+    transform: translateX(17%);
+    margin-top: 3rem; }
     .skills__front__list__item {
       display: grid;
       grid-template-columns: max-content 1fr;
@@ -381,11 +381,9 @@ body {
         align-items: center; }
 
 .skills__degree {
-  position: absolute;
-  top: 12rem;
-  left: 0;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  margin: 2rem 0; }
   .skills__degree__img {
     width: 4rem;
     height: 4rem;
@@ -400,19 +398,27 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   grid-row: 7/ 8;
-  grid-column: 2 / 6;
-  position: relative; }
+  grid-column: 2 / 6; }
+  .skills__business__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+  .skills__business__section {
+    display: flex;
+    width: 80%;
+    margin-top: 3rem; }
   .skills__business__item {
     width: 80%;
-    height: 50%;
+    height: 100%;
     display: grid;
     grid-template-rows: max-content 1fr; }
     .skills__business__item__title {
       width: 100%;
       padding: 2rem 0;
-      padding-left: 13rem;
-      transform: translateY(4rem); }
+      padding-left: 13rem; }
     .skills__business__item__list {
       width: 80%;
       list-style: none;
@@ -425,8 +431,7 @@ body {
         width: 100%; }
       .skills__business__item__list__item {
         padding: 1rem 0;
-        font-size: 1.4rem;
-        transform: translateY(4rem); }
+        font-size: 1.4rem; }
         .skills__business__item__list__item__img {
           width: 13rem;
           height: 4rem;
