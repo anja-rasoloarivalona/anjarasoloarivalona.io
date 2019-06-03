@@ -9,6 +9,31 @@
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
+
+    &__social {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 10%;
+        width: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+        &__icon {
+            height: 3rem;
+            width: 3rem;
+            object-fit: cover;
+            fill: white;
+            margin: 0 1rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
 
     &--1 {
         z-index: 3;
