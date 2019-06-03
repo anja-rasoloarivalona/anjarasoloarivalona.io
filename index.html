@@ -124,16 +124,8 @@
     </section>
 
 
-    <section class="skills">
-
-        <div class="skills__gallery">
-            <img src="/img/bg.jpg" alt="img" class="skills__gallery__img">
-            <div class="skills__gallery__text">
-                Front-End developer
-            </div>
-        </div>
-
-        <div class="skills__front skills__text">
+    <section class="skills__front">
+        <h1 class="skills__title">Front-End Developer</h1>
             <ul class="skills__front__list">
                 <li class="skills__front__list__item">
                     <svg class="skills__icon skills__icon--html">
@@ -200,9 +192,10 @@
                     <h3>SASS</h3>
                 </li>
             </ul>
-        </div>
+    </section>
 
-        <div class="skills__business skills__text">
+    <section class="skills__business">
+            <h1 class="skills__title">Business Analyst</h1>
             <div class="skills__business__item">
                 <h2 class="skills__business__item__title">IT & Finance</h2>
                 <ul class="skills__business__item__list">
@@ -224,39 +217,29 @@
                     <li class="skills__business__item__list__item">IGraphix</li>
                 </ul>
             </div>
-
-        </div>
-
-        <div class="skills__gallery">
-            <img src="/img/analysis.jpg" alt="img" class="skills__gallery__img">
-            <div class="skills__gallery__text">
-                Business Analyst
-            </div>
-        </div>
-
-
     </section>
 
-    <div class="contact__layer">       
+    <div class="contact__layer">
     </div>
     <section class="contact">
 
-            <form action="https://formspree.io/rasoloanja@gmail.com" method="POST" class="form">
-				<div class="form__group">
-					<input type="text" class="form__input" placeholder="Full name" id="name" name="name" required> 
-					<label for="name" class="form__label">Full name</label>
-				</div>
-				<div class="form__group">
-					<input type="email" class="form__input" placeholder="Email adress" id="email" name="name" required>
-					<label for="email" class="form__label">Email address</label>
-				</div>
+        <form action="https://formspree.io/rasoloanja@gmail.com" method="POST" class="form">
+            <div class="form__group">
+                <input type="text" class="form__input" placeholder="Full name" id="name" name="name" required>
+                <label for="name" class="form__label">Full name</label>
+            </div>
+            <div class="form__group">
+                <input type="email" class="form__input" placeholder="Email adress" id="email" name="name" required>
+                <label for="email" class="form__label">Email address</label>
+            </div>
 
-				<div class="form__group">
-						<textarea type="text" name="name" class="form__input form__message" placeholder="Your message" id="message" required></textarea>
-						<label for="message" class="form__label">Message</label>
-				</div>
-				<input class="form__submit" id="email-submit" type="submit" value="Send">
-			</form>
+            <div class="form__group">
+                <textarea type="text" name="name" class="form__input form__message" placeholder="Your message"
+                    id="message" required></textarea>
+                <label for="message" class="form__label">Message</label>
+            </div>
+            <input class="form__submit" id="email-submit" type="submit" value="Send">
+        </form>
 
     </section>
     <footer class="footer">

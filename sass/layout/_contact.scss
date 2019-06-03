@@ -1,13 +1,13 @@
 .contact {
     height: calc(100vh - 6rem);
     grid-column: 2 / 6;
-    grid-row: 7 / 8;
+    grid-row: 8 / 9;
     display: flex;
     align-items: center;
     justify-content: center;
 
     &__layer {
-        grid-row: 7 / 9;
+        grid-row: 8 / 10;
         grid-column: 1 / -1;
         height: 100vh;
         width: 100vw;
@@ -40,7 +40,8 @@
     &__group {
         width: 80%;  
         display: flex;
-        flex-direction: column;  
+        flex-direction: column;
+        margin: .5rem 0; 
         
     }
 
@@ -78,11 +79,11 @@
     &__label {
         font-size: 1.3rem;
         font-weight: 400;
-        //margin-left: 2rem; //To make it positioned exactly on same position which the text is on top
-        margin-top: 1rem;
+        margin-left: 1rem; //To make it positioned exactly on same position which the text is on top
         display: block; //otherwise, we cannot really use these box model properties
         transition: all .3s;
         color: white;
+        margin-top: .5rem;
  
     }
 
