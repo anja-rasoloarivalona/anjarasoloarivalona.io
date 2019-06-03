@@ -249,7 +249,6 @@ body {
   .project__text {
     max-width: 55%;
     height: 100%;
-    background: red;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -409,7 +408,7 @@ body {
     flex-direction: column; }
   .skills__business__section {
     display: flex;
-    width: 80%;
+    width: 90%;
     margin-top: 3rem; }
   .skills__business__item {
     width: 80%;
@@ -429,7 +428,8 @@ body {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         padding-left: 0;
-        width: 100%; }
+        width: 100%;
+        grid-gap: 1rem; }
       .skills__business__item__list__item {
         padding: 1rem 0;
         font-size: 1.4rem; }
