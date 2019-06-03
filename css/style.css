@@ -58,11 +58,25 @@ body {
 
 .footer {
   grid-column: 1 / -1;
-  height: 6rem;
+  height: 8rem;
   grid-row: 9 / 10;
   width: 100%;
   justify-self: flex-end;
-  color: white; }
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .footer__item {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem; }
+    .footer__item__icon {
+      width: 2.7rem;
+      height: 2.7rem;
+      object-fit: cover;
+      fill: white; }
+    .footer__item__text {
+      margin-left: 1rem; }
 
 .nav {
   grid-row: 1 / 2;

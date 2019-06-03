@@ -1,9 +1,33 @@
 .footer {
     grid-column: 1 / -1;
-    height: 6rem;
+    height: 8rem;
+  
     
     grid-row: 9 / 10;
     width: 100%;
     justify-self: flex-end;
     color: white;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin: 0 1rem;
+
+        &__icon {
+            width: 2.7rem;
+            height: 2.7rem;
+            object-fit: cover;
+            fill: white;
+        }
+
+        &__text {
+            margin-left: 1rem;
+        }
+    }
 }
