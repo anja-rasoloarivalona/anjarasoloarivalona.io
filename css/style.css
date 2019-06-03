@@ -35,7 +35,7 @@ body {
   line-height: 1,7; }
 
 .title--primary {
-  font-size: 2rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   color: white; }
 
@@ -244,7 +244,8 @@ body {
   min-width: 61rem;
   max-width: 61rem;
   background: white;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-top: 3rem; }
   .project__text {
     max-width: 55%;
     height: 100%;
