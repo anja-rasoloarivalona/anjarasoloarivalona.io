@@ -18,7 +18,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  overflow-x: hidden; }
 
 .container {
   display: grid;
@@ -50,7 +51,8 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 6rem; }
+  height: 6rem;
+  background: black; }
   .nav__logo {
     display: flex;
     justify-content: center;
@@ -185,37 +187,15 @@ body {
 
 .skills {
   height: calc(100vh - 6rem);
-  grid-column: 2 / 6;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .skills__front {
-    width: 80%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-    .skills__front__title {
-      font-size: 1.4rem;
-      padding: .8rem 1.6rem; }
-    .skills__front__list {
-      width: 90%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center; }
-      .skills__front__list__item {
-        display: grid;
-        grid-template-columns: max-content 1fr;
-        width: 40%;
-        margin: 1rem 0; }
-        .skills__front__list__item h3 {
-          height: 100%;
-          width: 100%;
-          padding-left: 2rem;
-          display: flex;
-          align-items: center; }
+  width: 100%;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, calc(100vw / 2));
+  grid-template-rows: repeat(2, calc((100vh - 6rem) / 2)); }
+  .skills__title {
+    font-size: 1.4rem;
+    padding: .8rem 1.6rem;
+    text-align: center; }
   .skills__icon {
     width: 3rem;
     height: 3rem;
@@ -224,6 +204,67 @@ body {
       fill: #E34F26; }
     .skills__icon--css {
       fill: #1A70B5; }
+  .skills__gallery {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    .skills__gallery__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .skills__gallery__text {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+  .skills__front {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .skills__front__list {
+      width: 90%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, max-content);
+      align-items: center;
+      justify-items: center; }
+      .skills__front__list__item {
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        width: 70%;
+        margin: 1rem 0; }
+        .skills__front__list__item h3 {
+          height: 100%;
+          width: 100%;
+          padding-left: 2rem;
+          display: flex;
+          align-items: center; }
   .skills__business {
-    width: 80%;
-    height: 80%; }
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .skills__business__item {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-rows: max-content 1fr;
+      justify-items: center; }
+      .skills__business__item__title {
+        width: 100%;
+        text-align: center;
+        padding: 2rem 0; }
+      .skills__business__item__list {
+        width: 80%;
+        list-style: none; }
+        .skills__business__item__list__item {
+          padding: 1rem 0;
+          text-align: center;
+          font-size: 1.4rem; }
