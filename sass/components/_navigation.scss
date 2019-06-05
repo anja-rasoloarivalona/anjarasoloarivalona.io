@@ -42,11 +42,22 @@
         list-style: none;;
 
         &__link {
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 1.1rem;
-            color: white;
-            font-family: var(--font-primary);
+
+            &:link,
+            &:visited {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 1.1rem;
+                color: white;
+                font-family: var(--font-primary);
+            }
+           
+            
+            &:active, &:hover {
+                text-decoration: line-through;
+            }
+
+         
         }
     }
 }

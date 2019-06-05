@@ -131,12 +131,14 @@ body {
     justify-content: space-around;
     width: 35%;
     list-style: none; }
-    .nav__list__link {
+    .nav__list__link:link, .nav__list__link:visited {
       text-decoration: none;
       text-transform: uppercase;
       font-size: 1.1rem;
       color: white;
       font-family: var(--font-primary); }
+    .nav__list__link:active, .nav__list__link:hover {
+      text-decoration: line-through; }
 
 .contact {
   height: calc(100vh - 8rem);
