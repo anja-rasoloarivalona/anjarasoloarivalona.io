@@ -24,7 +24,7 @@
 
 
 .form {
-    width: 40vw;
+    width: 50vw;
     height: 60vh;
     display: flex;
     align-items: center;
@@ -34,7 +34,18 @@
     padding: 1rem 2rem;
     border-radius: 1px;
 
-    
+    @media screen and (max-width: 1164px) {
+        width: 60vw;
+   }
+
+   @media screen and (max-width: 897px) {
+        width: 70vw;
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 85vw;
+    }
+
     
 
     &__group {

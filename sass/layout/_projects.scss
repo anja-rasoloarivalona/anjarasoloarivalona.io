@@ -39,6 +39,26 @@
     flex-direction: column;
     margin-top: 3rem;
 
+    @media screen and (max-width: 918px) {
+        min-height: 32rem;
+        min-width: 55rem;
+        max-width: 55rem;
+        transform: translateX(10%);
+    }
+
+    @media screen and (max-width: 756px) {
+        min-height: 50rem;
+        min-width: 43rem;
+        max-width: 43rem;
+    }
+
+
+
+
+   
+
+
+
 
         &__number {
             position: absolute;
@@ -47,9 +67,21 @@
             font-size: 25rem;
             font-weight: 700;
             color: rgba(218, 205, 205, 0.767);
-         
             display: flex;
             align-items: center;
+
+            @media screen and (max-width: 756px) {
+                top: -3rem;
+                left: -14rem;
+                font-size: 23rem;
+            }
+
+            @media screen and (max-width: 918px) {
+                left: -9rem;
+            }
+    
+
+           
         }
     
   
@@ -63,9 +95,16 @@
         justify-content: space-around;
         align-items: center;
         font-size: 1.2rem;
-       
         line-height: 1.3;
         padding: .5rem 1rem;
+
+        @media screen and (max-width: 756px) {
+            height: 59%;
+            max-width: 65%;
+        }
+
+     
+
     }
 
     &__CTA {
@@ -74,6 +113,14 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
+
+        
+
+        @media screen and (max-width: 756px) {
+            width: 100%;
+        }
+    
+    
     }
 
 
@@ -106,6 +153,10 @@
             width: 9rem;
             height: 16rem;
             left: 55%;
+
+            @media screen and (max-width: 756px) {
+                left: 70%;
+            }
         }
     }
 
@@ -117,12 +168,24 @@
         left: -3rem;
         bottom: 2.2rem;
 
+        @media screen and (max-width: 918px) {
+            left: -2rem;
+        }
+
+        @media screen and (max-width: 756px) {
+            left: -1rem;
+        }
+
 
         &--small {
             width: 7.45rem;
             height: 13rem;
             left: 17.9rem;
             bottom: 1.45rem;
+
+            @media screen and (max-width: 918px) {
+                left: 16rem;
+            }
         }
     }
 
@@ -134,12 +197,23 @@
         left: -3rem;
         bottom: 2.2rem;
 
+        @media screen and (max-width: 918px) {
+            left: -2rem;
+        }
+
+        @media screen and (max-width: 756px) {
+            left: -1rem;
+        }
 
         &--small {
             width: 7.3rem;
             height: 13rem;
             left: 18.1rem;
             bottom: 1.7rem;
+
+            @media screen and (max-width: 918px) {
+                left: 16rem;
+            }
         }
     }
 
@@ -149,12 +223,23 @@
         left: -3rem;
         bottom: 1.59rem;
 
+        @media screen and (max-width: 918px) {
+            left: -2rem;
+        }
 
+        @media screen and (max-width: 756px) {
+            left: -1rem;
+        }
+        
         &--small {
             width: 7.3rem;
             height: 13rem;
             left: 18.1rem;
             bottom: 1.7rem;
+
+            @media screen and (max-width: 918px) {
+                left: 16rem;
+            }
         }
     }
 

@@ -66,6 +66,9 @@
         justify-content: center;
         flex-direction: column;
 
+        @media screen and (max-width: 942px) {
+            width: 70%;
+        }
 
         &__title {
             font-size: 3rem;
