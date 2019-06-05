@@ -26,7 +26,9 @@ body {
   display: grid;
   grid-template-columns: 1fr repeat(4, 20vw) 1fr;
   grid-template-rows: 6rem max-content;
-  grid-auto-rows: max-content; }
+  grid-auto-rows: max-content;
+  scroll-snap-type: y proximity;
+  scroll-padding-top: 6rem; }
 
 body {
   /*using the power of inheritance*/
@@ -148,7 +150,8 @@ body {
   grid-row: 8 / 9;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  scroll-margin-top: -8rem; }
   .contact__layer {
     grid-row: 8 / 10;
     grid-column: 1 / -1;

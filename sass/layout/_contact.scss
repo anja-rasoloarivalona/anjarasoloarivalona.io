@@ -6,6 +6,8 @@
     align-items: center;
     justify-content: center;
 
+    scroll-margin-top: -8rem;
+
     &__layer {
         grid-row: 8 / 10;
         grid-column: 1 / -1;

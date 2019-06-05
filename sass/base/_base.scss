@@ -31,4 +31,6 @@ body {
     grid-template-columns: 1fr repeat(4, 20vw) 1fr;
     grid-template-rows: 6rem max-content;
     grid-auto-rows: max-content;
+    scroll-snap-type: y proximity;
+    scroll-padding-top: 6rem;
 }
