@@ -112,6 +112,10 @@
     &__submit {
         width: 15rem;
         height: 4rem;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
 

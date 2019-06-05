@@ -99,6 +99,8 @@ body {
       height: 2.7rem;
       object-fit: cover;
       fill: white; }
+      .footer__item__icon:hover {
+        cursor: pointer; }
     .footer__item__text {
       margin-left: 1rem;
       font-size: 1.3rem; }
@@ -220,6 +222,8 @@ body {
   .form__submit {
     width: 15rem;
     height: 4rem; }
+    .form__submit:hover {
+      cursor: pointer; }
 
 .intro {
   grid-row: 1 / 3;

@@ -24,6 +24,10 @@
             height: 2.7rem;
             object-fit: cover;
             fill: white;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
 
         &__text {
