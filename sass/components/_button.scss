@@ -38,8 +38,12 @@
             }
         }
 
+        &:focus {
+            outline: none;
+        }
 
         &:hover {
+            outline: none;
             border: none;
             transform: translateY(-3px);
             cursor: pointer;

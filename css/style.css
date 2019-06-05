@@ -64,7 +64,10 @@ body {
     border: 1px solid #1b0080; }
     .button--3 a {
       color: #1b0080; }
+  .button:focus {
+    outline: none; }
   .button:hover {
+    outline: none;
     border: none;
     transform: translateY(-3px);
     cursor: pointer; }
