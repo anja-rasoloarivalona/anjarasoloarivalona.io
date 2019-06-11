@@ -401,7 +401,7 @@ body {
     .project--1__img--small {
       width: 7.45rem;
       height: 13rem;
-      left: 17.9rem;
+      left: 17.7rem;
       bottom: 1.45rem; }
       @media screen and (max-width: 918px) {
         .project--1__img--small {
@@ -420,8 +420,8 @@ body {
     .project--2__img--small {
       width: 7.3rem;
       height: 13rem;
-      left: 18.1rem;
-      bottom: 1.7rem; }
+      left: 17.8rem;
+      bottom: 1.6rem; }
       @media screen and (max-width: 918px) {
         .project--2__img--small {
           left: 16rem; } }
@@ -439,8 +439,8 @@ body {
     .project--3__img--small {
       width: 7.3rem;
       height: 13rem;
-      left: 18.1rem;
-      bottom: 1.7rem; }
+      left: 17.8rem;
+      bottom: 1.25rem; }
       @media screen and (max-width: 918px) {
         .project--3__img--small {
           left: 16rem; } }
