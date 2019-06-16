@@ -10,6 +10,28 @@ $(document).ready(function(){
 
 
 
+    var t2 = new TimelineMax();
+//set d
+    t2
+    .set(".title--primary", {autoAlpha: 0, y:'150%'})
+    .to(".title--primary", 2, {autoAlpha: 1, y:'0%'})
+
+    
+    var t3 = new TimelineMax();
+//set d
+    t3
+    .set(".intro__text__para", {autoAlpha: 0, y:'150%'})
+    .to(".intro__text__para", 2, {autoAlpha: 1, y:'0%'})
+
+    var t4 = new TimelineMax();
+    //set d
+        t4
+        .set(".nav", {autoAlpha: 0, y:'-100%'})
+        .set(".intro__social", {autoAlpha: 0, y:'100%'})
+        .to(".nav", 1, {autoAlpha: 1, y:'0%'},'+=1')
+        .to(".intro__social", 1, {autoAlpha: 1, y:'0%'},'-=1')
+
+
 
     var a = new TimelineMax();
     
